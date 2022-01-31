@@ -7,7 +7,7 @@
  - Mostrar 3 campos de texto para introducir usuario, nombre y apellido
  - Motrar un boton guardar
  - Motrar un boton para acceder al listado de registros
- - Al pulsar en "guardar" se almacenaran los datos introducidos (elegir entre XML, JSON o UserDefault) y se mostrara la vista 2
+ - Al pulsar en "guardar" se almacenaran los datos introducidos (XML) y se mostrara la vista 2
  
 * Vista 2:
  - Se mostrara un listado con los datos almacenados en Vista 1
