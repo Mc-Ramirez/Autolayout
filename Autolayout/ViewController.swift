@@ -18,6 +18,9 @@ class ViewController: UIViewController, XMLParserDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
 
     func getDataXML(){
         guard let parseador: XMLParser = XMLParser(contentsOf: getFullPath2()) else {return}
@@ -93,6 +96,12 @@ class ViewController: UIViewController, XMLParserDelegate {
     private func getDocumentPath() -> URL{
         guard let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {return URL(string: "")!}
         return path
+    }
+    
+    private func getFullPath() -> URL {
+        let path = getDocumentPath()
+        let fileURL =  path.appendingPathComponent("datos.json")
+        return fileURL
     }
     
     private func getFullPath2() -> URL {

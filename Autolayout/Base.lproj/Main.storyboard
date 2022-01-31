@@ -107,7 +107,7 @@
                     <connections>
                         <outlet property="txt_lastName" destination="WUK-Du-WbM" id="mdC-hh-6uF"/>
                         <outlet property="txt_name" destination="456-Ek-BJB" id="SUL-Ab-L3J"/>
-                        <outlet property="txt_user" destination="456-Ek-BJB" id="Ef6-vy-BTW"/>
+                        <outlet property="txt_user" destination="hA6-E3-Xf9" id="wVe-PO-MQx"/>
                         <segue destination="miS-bq-AXp" kind="show" id="iBA-k9-fh4"/>
                     </connections>
                 </viewController>
@@ -148,7 +148,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="lbl_apellido" destination="1Vq-AS-D4y" id="9nB-xG-HN4"/>
-                                    <outlet property="lbl_nombre" destination="1Vq-AS-D4y" id="80s-Cp-OYj"/>
+                                    <outlet property="lbl_nombre" destination="IaR-77-LXW" id="l7s-r0-ycb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -164,7 +164,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q06-lv-h2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="-34"/>
+            <point key="canvasLocation" x="869.56521739130437" y="-34.151785714285715"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GIp-gV-S0N">

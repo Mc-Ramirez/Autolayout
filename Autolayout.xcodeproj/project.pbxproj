@@ -18,7 +18,7 @@
 		CB63EAAD27A839B400FDAC11 /* AutolayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB63EAAC27A839B400FDAC11 /* AutolayoutUITestsLaunchTests.swift */; };
 		CB63EABA27A8784800FDAC11 /* TableViewCellXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB63EAB927A8784800FDAC11 /* TableViewCellXML.swift */; };
 		CB63EABC27A87A4A00FDAC11 /* TableViewControllerRecordListXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB63EABB27A87A4A00FDAC11 /* TableViewControllerRecordListXML.swift */; };
-		CB63EABE27A87D4800FDAC11 /* FileManager&TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB63EABD27A87D4800FDAC11 /* FileManager&TableView.swift */; };
+		CB63EAC027A8997E00FDAC11 /* usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB63EABF27A8997E00FDAC11 /* usuario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		CB63EAAC27A839B400FDAC11 /* AutolayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB63EAB927A8784800FDAC11 /* TableViewCellXML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellXML.swift; sourceTree = "<group>"; };
 		CB63EABB27A87A4A00FDAC11 /* TableViewControllerRecordListXML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerRecordListXML.swift; sourceTree = "<group>"; };
-		CB63EABD27A87D4800FDAC11 /* FileManager&TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager&TableView.swift"; sourceTree = "<group>"; };
+		CB63EABF27A8997E00FDAC11 /* usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usuario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				CB63EA8D27A839B300FDAC11 /* ViewController.swift */,
 				CB63EA8F27A839B300FDAC11 /* Main.storyboard */,
 				CB63EABB27A87A4A00FDAC11 /* TableViewControllerRecordListXML.swift */,
-				CB63EABD27A87D4800FDAC11 /* FileManager&TableView.swift */,
+				CB63EABF27A8997E00FDAC11 /* usuario.swift */,
 				CB63EAB927A8784800FDAC11 /* TableViewCellXML.swift */,
 				CB63EA9227A839B400FDAC11 /* Assets.xcassets */,
 				CB63EA9427A839B400FDAC11 /* LaunchScreen.storyboard */,
@@ -267,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB63EABE27A87D4800FDAC11 /* FileManager&TableView.swift in Sources */,
 				CB63EABC27A87A4A00FDAC11 /* TableViewControllerRecordListXML.swift in Sources */,
 				CB63EA8E27A839B300FDAC11 /* ViewController.swift in Sources */,
+				CB63EAC027A8997E00FDAC11 /* usuario.swift in Sources */,
 				CB63EABA27A8784800FDAC11 /* TableViewCellXML.swift in Sources */,
 				CB63EA8A27A839B300FDAC11 /* AppDelegate.swift in Sources */,
 				CB63EA8C27A839B300FDAC11 /* SceneDelegate.swift in Sources */,

@@ -7,7 +7,4 @@
 
 import Foundation
 
-struct Item {
-    var nombre: String
-    var apellido: String
-}
+
