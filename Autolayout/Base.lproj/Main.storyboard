@@ -150,15 +150,16 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="1Vq-AS-D4y" secondAttribute="bottom" constant="2" id="Gue-WR-loq"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="IaR-77-LXW" secondAttribute="trailing" constant="15" id="Iz1-hw-gUt"/>
-                                        <constraint firstItem="1Vq-AS-D4y" firstAttribute="leading" secondItem="hGg-rl-iXM" secondAttribute="leadingMargin" constant="15" id="Laf-rM-lqM"/>
-                                        <constraint firstItem="xKW-Rw-Zzg" firstAttribute="leading" secondItem="hGg-rl-iXM" secondAttribute="leadingMargin" constant="15" id="Mwo-ja-psZ"/>
-                                        <constraint firstItem="IaR-77-LXW" firstAttribute="leading" secondItem="hGg-rl-iXM" secondAttribute="leadingMargin" constant="15" id="YJ5-4A-ogK"/>
-                                        <constraint firstItem="IaR-77-LXW" firstAttribute="top" secondItem="xKW-Rw-Zzg" secondAttribute="bottom" constant="3" id="cDA-3Y-10T"/>
-                                        <constraint firstItem="1Vq-AS-D4y" firstAttribute="top" secondItem="IaR-77-LXW" secondAttribute="bottom" constant="3" id="cN3-Jl-V1y"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="1Vq-AS-D4y" secondAttribute="trailing" constant="15" id="dI3-qe-75S"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="xKW-Rw-Zzg" secondAttribute="trailing" constant="15" id="eXv-9l-kuG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="IaR-77-LXW" secondAttribute="trailing" constant="15" id="1Nm-mh-dKQ"/>
+                                        <constraint firstItem="IaR-77-LXW" firstAttribute="leading" secondItem="hGg-rl-iXM" secondAttribute="leadingMargin" constant="15" id="DHe-uC-Tpf"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1Vq-AS-D4y" secondAttribute="trailing" constant="15" id="E29-Yi-sq7"/>
+                                        <constraint firstItem="IaR-77-LXW" firstAttribute="top" secondItem="xKW-Rw-Zzg" secondAttribute="bottom" constant="3" id="Yxq-lo-k4s"/>
+                                        <constraint firstItem="1Vq-AS-D4y" firstAttribute="leading" secondItem="hGg-rl-iXM" secondAttribute="leadingMargin" constant="15" id="djO-di-q06"/>
+                                        <constraint firstItem="1Vq-AS-D4y" firstAttribute="top" secondItem="IaR-77-LXW" secondAttribute="bottom" constant="3" id="i71-P2-aKS"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1Vq-AS-D4y" secondAttribute="bottom" constant="2" id="u0p-7q-NOL"/>
+                                        <constraint firstItem="xKW-Rw-Zzg" firstAttribute="top" secondItem="hGg-rl-iXM" secondAttribute="topMargin" constant="2" id="wJt-Hp-Kyg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xKW-Rw-Zzg" secondAttribute="trailing" constant="15" id="xho-ms-z52"/>
+                                        <constraint firstItem="xKW-Rw-Zzg" firstAttribute="leading" secondItem="hGg-rl-iXM" secondAttribute="leadingMargin" constant="15" id="yHp-iv-ClX"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
