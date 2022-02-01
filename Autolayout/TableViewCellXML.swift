@@ -5,6 +5,7 @@
 import UIKit
 
 class TableViewCellXML: UITableViewCell {
+    @IBOutlet weak var lbl_usuario: UILabel!
     @IBOutlet weak var lbl_nombre: UILabel!
     @IBOutlet weak var lbl_apellido: UILabel!
     
