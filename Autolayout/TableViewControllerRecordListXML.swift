@@ -10,7 +10,8 @@ class TableViewControllerRecordListXML: UITableViewController, XMLParserDelegate
     var apellido = String()
     var nombreElemento: String = ""
     var urlXML = ""
-    var arrayDiccionarioDatos = [["nombre": "uno","apellido": "dos"]]
+    var arrayDiccionarioDatos = [["usuario": "uno","nombre": "uno","apellido": "dos"]]
+    var use = String()
     var nom = String()
     var apel = String()
     var listaUsuarios = [Item]()
@@ -37,6 +38,7 @@ class TableViewControllerRecordListXML: UITableViewController, XMLParserDelegate
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = miTabla.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! TableViewCellXML
+        cell.lbl_usuario.text = listaUsuarios[indexPath.row].usuario
         cell.lbl_nombre.text = listaUsuarios[indexPath.row].nombre
         cell.lbl_apellido.text = listaUsuarios[indexPath.row].apellido
         return cell
@@ -67,6 +69,7 @@ class TableViewControllerRecordListXML: UITableViewController, XMLParserDelegate
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         nombreElemento = elementName
         if nombreElemento == "item" {
+            use = ""
             nom = ""
             apel = ""
             
@@ -77,9 +80,11 @@ class TableViewControllerRecordListXML: UITableViewController, XMLParserDelegate
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         let caracter = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         if !caracter.isEmpty {
+            if nombreElemento == "usuario"{
+                use += caracter
+            }
             if nombreElemento == "nombre"{
                 nom += caracter
-                
             }
             if nombreElemento == "apellido"{
                 apel += caracter
@@ -90,7 +95,7 @@ class TableViewControllerRecordListXML: UITableViewController, XMLParserDelegate
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "item" {
-            listaUsuarios.append(Item(nombre: nom, apellido: apel))
+            listaUsuarios.append(Item(usuario: use,nombre: nom, apellido: apel))
         }
     }
     

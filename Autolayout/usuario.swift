@@ -5,6 +5,7 @@
 import Foundation
 
 struct Item {
+    var usuario: String
     var nombre: String
     var apellido: String
 }

@@ -10,6 +10,7 @@ class ViewController: UIViewController, XMLParserDelegate {
     @IBOutlet weak var txt_lastName: UITextField!
     var nom = String()
     var apel = String()
+    var use = String()
     var nombreElemento = String()
     var arrayDiccionarioDatos = [[String: String]]()
     let fileManager = FileManager.default
@@ -31,6 +32,7 @@ class ViewController: UIViewController, XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         nombreElemento = elementName
         if nombreElemento == "item" {
+            use = String()
             nom = String()
             apel = String()
         }
@@ -39,6 +41,9 @@ class ViewController: UIViewController, XMLParserDelegate {
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         let caracter = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         if caracter.isEmpty == false {
+            if nombreElemento == "usuario"{
+                use += caracter
+            }
             if nombreElemento == "nombre"{
                 nom += caracter
             }
@@ -50,15 +55,16 @@ class ViewController: UIViewController, XMLParserDelegate {
 
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "item" {
-            let diccionarioNuevo = ["nombre": nom, "apellido": apel]
+            let diccionarioNuevo = ["usuario": use, "nombre": nom, "apellido": apel]
             arrayDiccionarioDatos.append(diccionarioNuevo)
         }
     }
     
     @IBAction func btn_saveXML(_ sender: Any) {
+        guard let text_user = txt_user.text else {return}
         guard let text_name = txt_name.text else {return}
         guard let text_lastName = txt_lastName.text else {return}
-        let diccionarioNuevo = ["nombre": text_name, "apellido": text_lastName]
+        let diccionarioNuevo = ["usuario": text_user ,"nombre": text_name, "apellido": text_lastName]
         arrayDiccionarioDatos.append(diccionarioNuevo)
         print(diccionarioNuevo)
         let fileManager = FileManager.default
@@ -80,6 +86,9 @@ class ViewController: UIViewController, XMLParserDelegate {
         for i in user2{
             stringXml.append("<item>\n")
             for j in i{
+                if j.key == "usuario" {
+                    stringXml.append("<usuario>\n \(j.value)</usuario>\n")
+                }
                 if j.key == "nombre" {
                     stringXml.append("<nombre>\n \(j.value)</nombre>\n")
                 }
