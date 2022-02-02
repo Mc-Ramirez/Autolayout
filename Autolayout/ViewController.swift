@@ -24,6 +24,8 @@ class ViewController: UIViewController, XMLParserDelegate {
     @IBOutlet weak var btn_userlist_top: NSLayoutConstraint!
     @IBOutlet weak var txt_name_botton: NSLayoutConstraint!
     @IBOutlet weak var txt_name_top: NSLayoutConstraint!
+    @IBOutlet weak var btn_save_hd: NSLayoutConstraint!
+    @IBOutlet weak var bt_save_wd: NSLayoutConstraint!
     
     
     override func viewDidLoad() {
@@ -133,23 +135,25 @@ class ViewController: UIViewController, XMLParserDelegate {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         let orientacion = UIDevice.current.orientation
         if (orientacion.isLandscape) {
-            imgTop.constant = 5
-            userTop.constant = 5
-            img_hd.constant = 80
-            img_wd.constant = 140
+            imgTop.constant = 1
+            userTop.constant = 2
+            img_hd.constant = 40
+            img_wd.constant = 70
             btn_userlist_botton.constant = 5
             btn_userlist_top.constant = 3
             txt_name_botton.constant = 3
-            txt_name_top.constant = 3
+            //txt_name_top.constant = 3
         }else{
-            imgTop.constant = 106
-            userTop.constant = 65
+            imgTop.constant = 30
+            userTop.constant = 30
             img_hd.constant = 150
             img_wd.constant = 240
-            btn_userlist_botton.constant = 100
+            btn_userlist_botton.constant = 20
             btn_userlist_top.constant = 20
-            txt_name_botton.constant = 20
-            txt_name_top.constant = 20
+            //txt_name_top.constant = 5
+            txt_name_botton.constant = 5
+            //btn_save_hd.constant = 25
+            //bt_save_wd.constant = 200
         }
     }
     
