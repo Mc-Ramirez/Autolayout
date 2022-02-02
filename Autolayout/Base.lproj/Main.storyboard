@@ -37,6 +37,7 @@
                                 <rect key="frame" x="87" y="194" width="240" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="GjD-0v-ueY"/>
+                                    <constraint firstAttribute="width" constant="240" id="gcm-dw-Wdl"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hA6-E3-Xf9">
@@ -104,9 +105,17 @@
                     <tabBarItem key="tabBarItem" title="Register" image="person.fill.badge.plus" catalog="system" id="cXF-7L-sVJ"/>
                     <navigationItem key="navigationItem" id="uQg-dJ-cZb"/>
                     <connections>
+                        <outlet property="btn_userlist_botton" destination="AW9-fc-siW" id="DXd-jy-z0S"/>
+                        <outlet property="btn_userlist_top" destination="aRT-lf-9br" id="8fZ-jY-0rB"/>
+                        <outlet property="imgTop" destination="pBO-EV-78J" id="NSn-7Q-QzI"/>
+                        <outlet property="img_hd" destination="GjD-0v-ueY" id="4eR-ph-oUt"/>
+                        <outlet property="img_wd" destination="gcm-dw-Wdl" id="B67-qQ-8ZV"/>
                         <outlet property="txt_lastName" destination="WUK-Du-WbM" id="mdC-hh-6uF"/>
                         <outlet property="txt_name" destination="456-Ek-BJB" id="SUL-Ab-L3J"/>
+                        <outlet property="txt_name_botton" destination="Wa4-tg-woc" id="MYY-9l-4X2"/>
+                        <outlet property="txt_name_top" destination="txu-NC-sAe" id="N6G-Bq-lMe"/>
                         <outlet property="txt_user" destination="hA6-E3-Xf9" id="wVe-PO-MQx"/>
+                        <outlet property="userTop" destination="nE5-KC-ncb" id="Oat-r7-Nr7"/>
                         <segue destination="miS-bq-AXp" kind="show" id="iBA-k9-fh4"/>
                     </connections>
                 </viewController>

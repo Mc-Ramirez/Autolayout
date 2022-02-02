@@ -106,4 +106,6 @@ class TableViewControllerRecordListXML: UITableViewController, XMLParserDelegate
             print("error lo que sea \(error)")
         }
     }
+    
+    
 }

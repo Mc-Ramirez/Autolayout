@@ -15,6 +15,16 @@ class ViewController: UIViewController, XMLParserDelegate {
     var arrayDiccionarioDatos = [[String: String]]()
     let fileManager = FileManager.default
 
+    //Constraint
+    @IBOutlet weak var imgTop: NSLayoutConstraint!
+    @IBOutlet weak var userTop: NSLayoutConstraint!
+    @IBOutlet weak var img_hd: NSLayoutConstraint!
+    @IBOutlet weak var img_wd: NSLayoutConstraint!
+    @IBOutlet weak var btn_userlist_botton: NSLayoutConstraint!
+    @IBOutlet weak var btn_userlist_top: NSLayoutConstraint!
+    @IBOutlet weak var txt_name_botton: NSLayoutConstraint!
+    @IBOutlet weak var txt_name_top: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,5 +128,31 @@ class ViewController: UIViewController, XMLParserDelegate {
         let fileURL =  path.appendingPathComponent("datos.xml")
         return fileURL
     }
+    
+    //Autolayout
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        let orientacion = UIDevice.current.orientation
+        if (orientacion.isLandscape) {
+            imgTop.constant = 5
+            userTop.constant = 5
+            img_hd.constant = 80
+            img_wd.constant = 140
+            btn_userlist_botton.constant = 5
+            btn_userlist_top.constant = 3
+            txt_name_botton.constant = 3
+            txt_name_top.constant = 3
+        }else{
+            imgTop.constant = 106
+            userTop.constant = 65
+            img_hd.constant = 150
+            img_wd.constant = 240
+            btn_userlist_botton.constant = 100
+            btn_userlist_top.constant = 20
+            txt_name_botton.constant = 20
+            txt_name_top.constant = 20
+        }
+    }
+    
+    
 }
 
